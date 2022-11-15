@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 import {
   FaEnvelope,
   FaInstagram,
@@ -6,41 +7,22 @@ import {
   FaGithubAlt
 } from "react-icons/fa";
 
-// const SocialLinks = [
-//   {
-//     path: "mailto:cindy.do10@gmail.com",
-//     title: "Email",
-//     image: <FaEnvelope className="text-5xl hover:text-header-hover" />
-//   },
-
-//   {
-//     path: "https://www.instagram.com/c1ndydonut/",
-//     title: "Instagram",
-//     image: <FaInstagram className="text-5xl hover:text-header-hover" />
-//   },
-
-//   {
-//     path: "https://www.linkedin.com/in/cindydo-ucr/",
-//     title: "LinkedIn",
-//     image: <FaLinkedin className="text-5xl hover:text-header-hover" />
-//   },
-
-//   {
-//     path: "https://github.com/condoes",
-//     title: "Github",
-//     image: <FaGithubAlt className="text-5xl hover:text-header-hover" />
-//   }
-// ];
-
 function Landing() {
   return (
     <div className="w-full h-screen bg-gradient-to-br from-sand via-babyblue to-lightpink">
       <div className="font-lexend text-white text-center p-4">
         <h1 className="intro">hi, im</h1>
-        <h1 className="text-9xl drop-shadow-black">
+        {/* <h1 className="text-9xl drop-shadow-black">
           <font color="#FFCFF2">cindy </font>
           <font color="#C3D7E9">do</font>
-        </h1>
+        </h1> */}
+        <TypeAnimation
+          sequence={["cindy do", 5000, "", 1000]}
+          speed={10}
+          className="text-9xl !drop-shadow-black "
+          wrapper="h1"
+          repeat={Infinity}
+        />
         <h1 className="p-3 drop-shadow-black">aspiring software engineer</h1>
       </div>
       <div className="flex flex-col items-center justify-center">

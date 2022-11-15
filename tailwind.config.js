@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lexend: ["Lexend"],
-        playfair: ["PlayfairDisplay"]
+        playfair: ["Playfair Display"]
       },
       colors: {
         babyblue: "#D1E0FF",
